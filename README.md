@@ -30,19 +30,19 @@ The dataset is sourced from global energy and economic data providers and includ
 
 Tables Used:
 
-country – Central reference table containing country names
+country_3 – Central reference table containing country names
 
-consumption – Energy consumption data by country and year
+consumption_3 – Energy consumption data by country and year
 
-production – Energy production data
+production_3 – Energy production data
 
 emission_3 – Carbon emission details
 
 gdp_3 – GDP data based on Purchasing Power Parity
 
-population – Population statistics
+population_3 – Population statistics
 
-Each table is linked using foreign key relationships with the country table.
+Each table is linked using foreign key relationships with the country_3 table.
 
 🗂️ ER Diagram Overview
 

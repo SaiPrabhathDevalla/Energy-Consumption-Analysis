@@ -36,9 +36,9 @@ consumption – Energy consumption data by country and year
 
 production – Energy production data
 
-emission – Carbon emission details
+emission_3 – Carbon emission details
 
-gdp_ppp – GDP data based on Purchasing Power Parity
+gdp_3 – GDP data based on Purchasing Power Parity
 
 population – Population statistics
 

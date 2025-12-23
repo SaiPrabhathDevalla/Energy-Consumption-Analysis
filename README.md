@@ -1,105 +1,113 @@
-🌍 Energy Consumption Analysis
+🌍 Energy Consumption Analysis (MySQL Project)
 📌 Project Overview
 
-The Energy Consumption Analysis project focuses on analyzing global energy data to understand the relationship between energy consumption, production, emissions, GDP, and population across different countries and years.
-The goal is to convert raw energy data into meaningful insights that support sustainable energy planning and data-driven decision making.
+The Energy Consumption Analysis project uses MySQL to analyze global energy and economic data across countries and years.
+The project focuses on understanding energy consumption, production, carbon emissions, GDP, and population trends using pure SQL queries.
 
-This project uses SQL for data analysis and Power BI for visualization to identify trends, comparisons, and key patterns in worldwide energy usage.
+This project demonstrates strong skills in database design, relational modeling, and SQL-based data analysis.
 
 🎯 Objectives
 
-Analyze energy consumption and production trends by country and year
+Analyze global energy consumption patterns
 
-Compare carbon emissions across countries
+Compare energy production vs consumption
 
-Study the relationship between GDP, population, and energy usage
+Study carbon emission trends across countries
 
-Identify top energy-consuming and emitting countries
+Understand the impact of GDP and population on energy usage
 
-Generate insightful dashboards for better understanding and presentation
+Extract meaningful insights using MySQL only
 
 🏢 Business Problem
 
-Global energy demand is increasing due to population growth and economic development. However, heavy dependence on fossil fuels leads to higher carbon emissions and environmental impact.
-There is a lack of integrated, data-driven analysis that connects energy consumption, production, emissions, GDP, and population.
-This project aims to bridge that gap by providing clear insights that help policymakers, organizations, and analysts understand energy patterns and support sustainable energy strategies.
+Global energy demand is increasing due to population growth and economic development, leading to higher carbon emissions and environmental concerns.
+However, energy-related data is often scattered across multiple sources, making analysis difficult.
 
-📂 Dataset Information
+This project solves the problem by integrating energy, economic, and population data into a structured MySQL database, enabling data-driven insights for sustainable energy planning and policy decisions.
 
-The dataset is sourced from global energy and economic data providers and includes multiple CSV files imported into a MySQL database.
+📂 Dataset Description
+
+The dataset consists of six CSV files, each representing a specific domain of global energy and economic data. These files were imported into MySQL and linked using relational keys.
 
 Tables Used:
 
 country_3 – Central reference table containing country names
 
-consumption_3 – Energy consumption data by country and year
+consum_3 – Energy consumption data by country and year
 
 production_3 – Energy production data
 
 emission_3 – Carbon emission details
 
-gdp_3 – GDP data based on Purchasing Power Parity
+gdp_3 – GDP data of countries
 
 population_3 – Population statistics
 
-Each table is linked using foreign key relationships with the country_3 table.
+All tables are connected through the country field, ensuring data consistency and integrity.
 
-🗂️ ER Diagram Overview
+🗂️ Database Design
 
-The country table acts as the central dimension table
+Relational database structure
 
-Other tables store fact data related to energy, emissions, GDP, and population
+country_3 acts as the central table
 
-Relationships ensure data integrity and reduced redundancy
+Foreign key relationships reduce data redundancy
+
+Ensures data integrity across all datasets
+
+Supports efficient multi-table SQL analysis
 
 🛠️ Tools & Technologies Used
 
-MySQL – Data storage, table creation, and querying
+MySQL – Database creation and querying
 
-SQL – Data analysis and transformations
+SQL – Data analysis and reporting
 
-Power BI – Interactive dashboards and data visualization
+CSV Files – Source data format
 
-Excel / CSV – Raw data format
+GitHub – Project hosting and documentation
 
-GitHub – Version control and project sharing
+🔍 SQL Concepts Applied
 
-📊 Key Analysis Performed
+Database and table creation
 
-Total energy consumption and production by country
+Primary keys and foreign keys
 
-Year-wise emission trends
+INNER JOIN operations
 
-Per-capita energy consumption and emissions
+Aggregate functions (SUM, AVG, MAX, MIN)
 
-Top countries by GDP and emissions
+GROUP BY and ORDER BY
 
-Comparison between developed and developing countries
+Subqueries
 
-Energy efficiency insights using production vs consumption
+Filtering using WHERE and HAVING
 
-📈 Power BI Dashboard Highlights
+📊 Sample Analysis Performed
 
-Country-wise energy consumption trends
+Total energy consumption by country
 
-Emissions comparison across years
+Comparison of production vs consumption
 
-GDP vs energy usage analysis
+Year-wise emission analysis
 
-Interactive filters for country and year
+GDP vs energy consumption comparison
 
-Clean and presentation-ready visuals
+Per-capita emission calculations
 
-🔍 Key Insights
+Identification of top emitting countries
 
-A small number of countries contribute to a major share of global energy consumption and emissions
+📈 Key Insights
 
-Higher GDP generally correlates with higher energy usage
+A small number of countries account for a major share of global energy consumption
 
-Fossil fuels dominate global energy production, increasing emissions
+Countries with higher GDP tend to consume more energy
 
-Per-capita energy usage varies significantly between countries
+High population does not always mean higher per-capita consumption
+
+Emission levels vary significantly based on energy production methods
 
 ✅ Conclusion
 
-This project demonstrates how data analytics and visualization can be used to understand complex global energy patterns. The insights derived from this analysis can support policy decisions, sustainability planning, and energy optimization strategies.
+This project demonstrates how MySQL alone can be effectively used for real-world data analysis.
+By integrating multiple datasets and applying structured SQL queries, meaningful insights were derived to understand global energy usage and its environmental impact.

@@ -1,4 +1,5 @@
 **🌍 Energy Consumption Analysis**
+
 **📌 Project Overview**
 
 * The Energy Consumption Analysis project uses MySQL to analyze global energy and economic data across countries and years.
